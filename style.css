@@ -17,8 +17,9 @@
 
 #outside-title {
     color: #c32c6b;
-    font-family: 'Knewave', cursive;
+    /* font-family: 'Knewave', cursive; */
     font-size: 30px;
+    font-weight: 700;
     text-align: center;
     padding: 30px 0;
 }
@@ -180,3 +181,12 @@ button.open-card-btn:hover i {
     padding: 30px 0 0 0;
     color: #741947;
 }
+
+.modal-content {
+    background-color: #ffdada;
+    border: 0;
+}
+
+
+/* popupp */
+
