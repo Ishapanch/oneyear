@@ -53,9 +53,9 @@
                 </div>
                 <div class="modal-body" id="innner">
                     <div class="container">
-                        <div class="row">
+                        <div class="row text-center">
                             <div class="col-lg-3 col-12">
-                                <img id="outside-pic" src="img1.png" class="w-100" style="padding: 20px;">
+                                <img id="outside-pic" src="img1.png" class="w-100" style="padding: 20px;max-width: 210px;">
                                 <p>
                                     <!-- <button onclick="close_card()" class="open-card-btn"> Exit The Card!!! <i style=""
                                 class="fa-solid fa-heart"></i></button> -->
@@ -125,7 +125,7 @@
 
                                     </p>
 
-                                    <div class="video-id text-center row" id="video" style="display: none; " >
+                                    <div class="video-id text-center row" id="video" style="display: none; ;" >
 
                                        <div class="col-12 col-lg-12">
                                         <p>
@@ -189,8 +189,8 @@
 
 
                 </div>
-                <div class="col-lg-3 col-12">
-                    <img id="outside-pic" src="img1.png" class="w-100" style="padding: 20px;">
+                <div class="col-lg-3 col-12 text-center">
+                    <img id="outside-pic" src="img1.png" class="w-100" style="padding: 20px;max-width: 210px">
                     <p>
                         <!-- <button onclick="open_card()" class="open-card-btn"> Open The Card!!! <i style=""
                                 class="fa-solid fa-heart"></i></button> -->
@@ -235,7 +235,13 @@
   } else {
     videoDiv.style.display = "none";
   }
-  
+
+// Check if video is paused or not
+if (video.contentWindow.document.getElementById("video").paused) {
+  video.contentWindow.document.getElementById("video").play(); // If paused, play the video
+} else {
+  video.contentWindow.document.getElementById("video").pause(); // If playing, pause the video
+}
 }
 
 </script>
